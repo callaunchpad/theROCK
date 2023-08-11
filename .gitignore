@@ -38,4 +38,4 @@ Thumbs.db
 
 # Credentials files #
 #####################
-./scraper/credentials.txt
+/scraper/credentials.txt
