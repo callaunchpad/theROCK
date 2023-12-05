@@ -17,7 +17,9 @@ from keras.layers import Dense, Activation, Input, LSTM, Reshape, Lambda, Repeat
 from keras import backend as K
 
 cwd = os.getcwd()
-parent_wd = cwd.replace('/model', '')
+file_dir = os.path.dirname(__file__)
+# parent_wd = cwd.replace('/model', '')
+parent_wd = file_dir.replace('/model/rnn', '')
 benchmark_handString_seq_path = parent_wd + '/preprocessing/benchmark_handString_seq_X'
 benchmarkNoGrade_handString_seq_path = parent_wd + '/preprocessing/benchmarkNoGrade_handString_seq_X'
 nonbenchmark_handString_seq_path = parent_wd + '/preprocessing/nonbenchmark_handString_seq_X'
