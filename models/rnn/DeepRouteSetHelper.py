@@ -19,7 +19,8 @@ from keras import backend as K
 cwd = os.getcwd()
 file_dir = os.path.dirname(__file__)
 # parent_wd = cwd.replace('/model', '')
-parent_wd = file_dir.replace('/model/rnn', '')
+parent_wd = file_dir.replace('/models/rnn', '')
+print(parent_wd)
 benchmark_handString_seq_path = parent_wd + '/preprocessing/benchmark_handString_seq_X'
 benchmarkNoGrade_handString_seq_path = parent_wd + '/preprocessing/benchmarkNoGrade_handString_seq_X'
 nonbenchmark_handString_seq_path = parent_wd + '/preprocessing/nonbenchmark_handString_seq_X'
