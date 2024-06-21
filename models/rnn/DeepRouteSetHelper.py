@@ -217,7 +217,7 @@ def sanityCheckAndOutput(indices, holdIx_to_holdStr, handStringList, outputExact
     # Splitting text and number in string  
     heightOfFirstHold = [re.findall(r'(\w+?)(\d+)', stringOffirstHold.split("-")[0])[0]] 
     heightOfSecondHold = [re.findall(r'(\w+?)(\d+)', stringOfsecondHold.split("-")[0])[0]] 
-    if int(heightOfFirstHold[0][1]) > 6 or int(heightOfSecondHold[0][1]) > 7:
+    if int(heightOfFirstHold[0][1]) > 9 or int(heightOfSecondHold[0][1]) > 10:
         passCheck = False
         if printError: print("Warning: Too high start", outputListInString)
         return passCheck, outputListInString, outputListInIx
